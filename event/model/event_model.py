@@ -3,8 +3,6 @@ from django.db import models
 from event.model.base_model import BaseModel
 
 
-# Create your models here.
-
 class EventModel(BaseModel):
     event_name = models.CharField(max_length=120, null=False, blank=False, verbose_name="Etkinlik Başlığı")
     event_description = models.CharField(max_length=100, null=False, blank=False, verbose_name="Etkinlik Kısa Açıklama")
